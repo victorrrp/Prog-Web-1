@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Introdução à JS</title>
+<script>
+alert("Sejam bem vindos!!"); //mostra mensagem na caixa de diálogo
+document.write("<font size=10>Introdução a JS</font><br>");//mostra mensagem na tela
+var x=10;
+alert("A nota da av1 é:\u00A0"+x);
+document.write("A nota da av1 é:\u00A0"+x); /*o sinal + em JS tem duas funções: concatenar (juntar) e somar*/
+
+var _nome="Victor Pereira";
+alert("Meu nome é:\u00A0"+_nome);
+document.write("<br>Meu nome é:\u00A0"+_nome);
+
+var $idade=22;
+alert("A minha idade é:\u00A0"+$idade);
+document.write("<br>A minha idade é:\u00A0"+$idade);
+
+//\u00A0 - espaço
+//\n - pular linha
+
+//*Operadores Aritméticos: +, -, *, /, %
+
+//soma
+
+var soma1=10+10;
+alert("A soma dos valores é:\u00A0"+soma1);
+document.write("<br>A soma dos valores é:\u00A0"+soma1);
+
+var soma2="10"+"10";
+alert("A concatenação dos valores é:\u00A0"+soma2);
+document.write("<br>A concatenação dos valores é:\u00A0"+soma2);
+
+//ex.: var soma3="10"+10; também é concatenação
+
+
+//subtração
+
+var sub=10.5-5;
+alert("O resultado da subtração é:\u00A0"+sub);
+document.write("<br>O resultado da subtração é:\u00A0"+sub);
+
+//multiplicação
+
+var mult=10*5;
+alert("O resultado da multiplicação é:\u00A0"+mult);
+document.write("<br>O resultado da multiplicação é:\u00A0"+mult);
+
+//divisão
+
+var div=10/2;
+alert("O resultado da divisão é:\u00A0"+div);
+document.write("<br>O resultado da divisão é:\u00A0"+div);
+
+//resto
+
+var resto=10%2;
+alert("O resto da divisão é:\u00A0"+resto);
+document.write("<br>O resto da divisão é:\u00A0"+resto);
+
+//outra maneira de fazer op aritmeticas
+
+alert("A soma dos numeros é:\u00A0" +(10+5));
+alert("O resultado da subtração é:\u00A0" +(10-2));
+alert("O resultado da multiplicação é:\u00A0" +(10*5));
+alert("O resultado da divisão é:\u00A0" +(10/2));
+alert("O resto da divisão é:\u00A0" +(10%2));
+
+
+//prompt - caixa para entrada de dados
+
+var nome=prompt("Qual seu nome?");
+alert("Prazer em conhecê-lo(a)\u00A0" +nome);
+document.write("<br>Prazer em conhecê-lo(a)\u00A0" +nome);
+
+var num1=parseInt(prompt("Entre com um valor"));
+var num2=parseInt(prompt("Entre com um valor"));
+var soma=num1+num2;
+alert("A soma dos valores é: "+soma);
+document.write("<br>A soma dos valores é: "+soma);
+
+//outra maneira
+
+alert("A soma dos valores é: "+(num1+num2));
+
+/*Exercícios:
+1. 1. Ler dois valores reais a partir do prompt, calcular e imprimir na tela:
+
+a) A soma destes valores;
+b) O produto deles;
+c) O quociente e 
+d) A diferença.*/
+
+var a=parseInt(prompt("Entre com um valor"));
+var b=parseInt(prompt("Entre com um valor"));
+var soma1=a+b;
+var prod=a*b;
+var quo=a/b;
+var dif=a-b;
+document.write("<br>A soma dos valores é: "+soma1);
+document.write("<br>A multiplicação dos valores é: "+prod);
+document.write("<br>A divisão dos valores é: "+quo);
+document.write("<br>A subtração dos valores é: "+dif);
+
+//2.Elabore um programa em JS que calcule a média aritmética de 2 notas e exiba o resultado na tela.
+
+var n1=parseInt(prompt("Digite sua nota da av1: "));
+var n2=parseInt(prompt("Digite sua nota da av2: "));
+
+var med=(n1+n2)/2;
+
+document.write("<br>Sua média é: "+med);
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
