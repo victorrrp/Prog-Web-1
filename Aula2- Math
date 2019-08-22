@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Aula 2</title>
+<script src="aula2.js"></script>
+</head>
+<body>
+
+
+</body>
+</html>
+
+
+
+
+
+//Metodo Math
+
+//abs- valor absoluto, transforma o numero negativo em positivo
+var a=Math.abs(-56);
+document.write("<font size=6>O valor da variavel a é:\u00A0"+a+"</font>");
+
+
+//max - retorna o maior valor
+var b=Math.max(50,5);
+document.write("<br><font size=6>O valor da variavel b é:\u00A0"+b+"</font>");
+
+
+//min - retorna o menor valor
+var c=Math.min(50,5);
+document.write("<br><font size=6>O valor da variavel c é:\u00A0" +c+"</font>");
+
+
+//pow - para elevar o numero
+var d=Math.pow(2,3);
+document.write("<br><font size=6>O valor da variavel d  elevado a pontencia é:\u00A0" +d+"</font>");
+
+
+//round - para arredondar valor matematicamente
+var e=Math.round(9.4);
+document.write("<br><font size=6>O valor da variavel e arredondado é:\u00A0" +e+"</font>");
+
+
+//ceil - arredonda obrigatoriamente para cima
+var f=Math.ceil(9.1);
+document.write("<br><font size=6>O valor da variavel f é:\u00A0" +f+"</font>");
+
+
+//floor - arredonda obrigatoriamente para baixo
+var g=Math.floor(9.9);
+document.write("<br><font size=6>O valor da variavel g é:\u00A0" +g+"</font>");
+
+
+//random - para trazer numeros aleatorios
+var h=Math.random();//valores aleatorios entre 0 e 1
+document.write("<br><font size=6>O valor da variavel h é:\u00A0" +h+"</font>");
+
+
+//random - para trazer numeros aleatorios
+var i=Math.random()*80;//valores aleatorios entre 0 e 80 (pode ser qualquer outro valor)
+document.write("<br><font size=6>O valor da variavel i é:\u00A0" +i+"</font>");
+
+
+//sqrt - raiz quadrada
+var j=Math.sqrt(25);
+document.write("<br><font size=6>O valor da variavel j é:\u00A0" +j+"</font>");
+
+
+//cbrt - raiz cubica
+var k=Math.cbrt(125);
+document.write("<br><font size=6>O valor da variavel k é:\u00A0" +k+"</font>");
+
+
+//toFixed() para definir quantas casas decimais vou querer
+var l=k.toFixed(1);
+document.write("<br><font size=6>O valor da variavel l é:\u00A0" +l+"</font>");
+
+
+//Operadores de comparação
+
+
+//operador igual (==) verifica somente se os dados sao iguais 
+var m=3;
+var n="3";
+document.write("<br><font size=6>O valor da variavel m é igual ao valor da variavel n?\u00A0"+(m==n));
+
+
+//operador igual identico (===) verifica se os dados e o tipos são iguais
+document.write("<br><font size=6>O valor da variavel m é identico ao valor da variavel n?\u00A0"+(m===n));
+
+
+//operador diferente (!) verifica se os dados são diferentes
+var o=5;
+document.write("<br><font size=6>a variavel o é diferente?\u00A0"+(o!="3"));
+
+
+//operador idade diferente (!==) verifica se os dados e a indentidade são diferentes
+var p="5";
+document.write("<br><font size=6>a variavel o possui identidade diferente?\u00A0"+(p!=="5"));
+
+
+//operador maior >
+var q=prompt("Entre com um numero:");
+document.write("<br><font size=6>o numero é maior?\u00A0"+(q>20));
+
+
+//operador menor <
+var r=prompt("Entre com um numero:");
+document.write("<br><font size=6>o numero é menor que?\u00A0"+(r<20));
+
+
+//operador maior igual >=
+var s=prompt("Entre com um numero:");
+document.write("<br><font size=6>o numero é maior ou igual?\u00A0"+(s>=20));
+
+
+//operador menor igual <=
+var t=prompt("Entre com um numero:");
+document.write("<br><font size=6>o numero é menor ou igual?\u00A0"+(t<=20));
+
+
+//Operadores Lógicos: and (&&), or (||), not(!)
+
+//and(&&)
+var u=prompt("Entre com um valor");
+document.write("<br><font size=6>O número encontra-se entre 1 e 20:\u00A0"+((u>=1)&&(u<=20)));
