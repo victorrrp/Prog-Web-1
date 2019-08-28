@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Aula 3</title>
+<script src="aula3.js"></script>
+</head>
+<body>
+
+
+</body>
+</html>
+
+//function
+//somar
+
+function somar(x,y){
+	document.write("A soma de x e y é:\u00A0"+(x+y));
+}
+
+somar(5,5);
+
+//passando os valores pelo prompt
+
+function somar1(x,y){
+	document.write("<br>A soma de x e y é:\u00A0"+(x+y));
+}
+var x=+(prompt("Entre com o valor de x:\u00A0"));//o sinal "+" substitui o parseInt
+var y=+(prompt("Entre com o valor de y:\u00A0"));
+
+somar1(x,y);
+
+//subtração
+
+function sub(x,y){
+	document.write("<br>A subtração de x e y é:\u00A0"+(x-y));
+}
+
+sub(10,0);
+
+//passando os valores pelo prompt
+
+function sub1(x,y){
+	document.write("<br>A subtração de x e y é:\u00A0"+(x-y));
+}
+var x=prompt("Entre com o valor de x:\u00A0");
+var y=prompt("Entre com o valor de y:\u00A0");
+
+sub1(x,y);
+
+//multiplicação
+
+function mult(x,y){
+	document.write("<br>A multiplicação de x e y é:\u00A0"+(x*y));
+}
+
+mult(9,9);
+
+//passando os valores pelo prompt
+
+function mult1(x,y){
+	document.write("<br>A multiplicação de x e y é:\u00A0"+(x*y));
+}
+var x=prompt("Entre com o valor de x:\u00A0");
+var y=prompt("Entre com o valor de y:\u00A0");
+mult1(x,y);
+
+
+function mult2(x,y,z){
+	document.write("<br>A multiplicação da função é:\u00A0"+((x*y)+z));
+}
+var x=parseInt(prompt("Entre com o valor de x:\u00A0"));
+var y=parseInt(prompt("Entre com o valor de y:\u00A0"));
+var z=parseInt(prompt("Entre com o valor de z:\u00A0"));
+
+mult2(x,y,z);
+
+function div(x,y){
+	document.write("<br>A divisão de x e y é:\u00A0"+(x/y));
+}
+div(81,9);
+
+//passando os valores pelo prompt
+
+function div1(x,y){
+	document.write("<br>A divisão de x e y é:\u00A0"+(x/y));
+}
+var x=prompt("Entre com o valor de x:\u00A0");
+var y=prompt("Entre com o valor de y:\u00A0");
+
+div1(x,y);
+
+
+function resto(x,y){
+	document.write("<br>O resto de x e y é:\u00A0"+(x%y));
+}
+resto(10,5);
+
+//passando os valores pelo prompt
+
+function resto1(x,y){
+	document.write("<br>O resto de "+x+" dividido por "+y+" é:\u00A0"+(x%y));
+}
+var x=prompt("Entre com o valor de x:\u00A0");
+var y=prompt("Entre com o valor de y:\u00A0");
+
+resto1(x,y);
+
+//function return
+
+function dividir(a,b){
+	return a/b
+}
+
+document.write("<br>O resultado da divisão é:\u00A0"+dividir(12,2));
+
+//passando os valores pelo prompt
+
+function dividir1(a,b){
+	return a/b
+}
+
+var a=prompt("Entre com o valor de a");
+var b=prompt("Entre com o valor de b");
+
+document.write("<br>O resultado da divisão é:\u00A0"+dividir1(a,b));
+
+function dividir2(a,b){
+	return((a/b)-a)
+}
+
+var a=prompt("Entre com o valor de a");
+var b=prompt("Entre com o valor de b");
+
+document.write("<br>O resultado da função é:\u00A0"+dividir2(a,b));
+
+
+//condição if, else, else if
+
+var idade=15
+
+if (idade<=10){
+	document.write("<br>Criança");
+}
+else{
+	document.write("<br>Adulto");
+}	
+
+//utilizando o prompt
+var idade=prompt("Entre com sua idade");
+
+if (idade<=10){
+	document.write("<br>Criança");
+}
+else{
+	document.write("<br>Adulto");
+}	
+
+
+//else if
+
+var idade=prompt("Entre com sua idade");
+
+
+if (idade<=10){
+	document.write("<br>Criança");
+}
+else if(idade>10&&idade<=16){
+	document.write("<br>Pré-adolescente");
+}
+else if(idade>16&&idade<=21){
+	document.write("<br>Adolescente");
+}
+else if(idade>21||idade<=50){
+	document.write("<br>Adulto");
+}
+else{
+	document.write("<br>Melhor idade");
+}
