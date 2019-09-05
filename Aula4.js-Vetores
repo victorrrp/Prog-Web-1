@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Aula 3</title>
+<script src="aula4.js"></script>
+</head>
+<body>
+
+
+</body>
+</html>
+-----------------------------
+
+//Estrutura de repetição
+//while
+
+var i=0;
+while(i<10){
+	alert(i);
+	i++
+}
+
+//switch - para condições multiplas
+
+var tecnologia=prompt("Digite a tecnologia");
+
+switch(tecnologia){
+	
+	case "js":
+	case "css":
+	case "html":
+	case "c++":
+	alert("Linguagem de programação");
+	document.write("Linguagem de programação");
+	
+	break;
+	case "sql":
+	case "mysql":
+	case "oracle":
+	case "maria db":
+	alert("Banco de dados");
+	document.write("Banco de dados");
+
+	break;
+	default:
+	alert("Opção inválida");
+}
+
+//for
+
+for(i=0;i<10;i++){
+	alert(i);
+}
+
+//vetor - pode ser declarado de 3 maneiras:
+
+//metodo construtor - new Array
+
+var disciplina=new Array("Prog Web2", " Programação", " BD2");
+document.write(disciplina);
+
+//mostrando a posição do elemento no array
+var disciplina=new Array("Prog Web2", "Programação", "BD2");
+document.write("<br>"+disciplina[1]);
+
+//função length - para mostrar a quantidade de elementos no array
+var disciplina=new Array("Prog Web2", "Programação", "BD2");
+document.write("<br>A quantidade de elementos no vetor é: "+disciplina.length);
+
+//função indexOf - para mostrar a posição do elemento
+var disciplina=new Array("Prog Web2", "Programação", "BD2");
+document.write("<br>A posição do elemento é: "+disciplina.indexOf("BD2"));
+
+//função lastIndexOf - para mostrar a ultima ocorrência, até em elementos repetidos
+var disciplina=new Array("Prog Web2", "BD2", "Programação", "BD2");
+document.write("<br>A posição do ultimo elemento é: "+disciplina.lastIndexOf("BD2"));
+
+//Metodo literal
+
+var frutas=["Banana", "Maça", "Abacaxi", "Uva"];
+document.write("<br>"+frutas);
+
+var a="melancia";
+document.write("<br>A quantidade de elementos da string é: "+a.length);
+
+//Metodo indices
+
+var frutas=new Array();
+
+frutas[0]="Banana";
+frutas[1]="Maça";
+frutas[2]="Abacaxi";
+frutas[3]="Uva";
+document.write("<br>"+frutas);
+
+//Função de ordenação
+//reverse - inverte a ordem dos elementos
+
+var frutas=["Banana", "Maça", "Abacaxi", "Uva"];
+document.write("<br>"+frutas.reverse());
+
+//sort - para colocar o vetor em ordem alfabetica
+
+var aluno=["Fulano", "Siclano", "Bertano"];
+document.write("<br>"+aluno.sort());
+
+//cortes e emendas
+//Metodo join - para alterar o separador do vetor
+
+var aluno=["Fulano", "Siclano", "Bertano"];
+document.write("<br>"+aluno.join("♥"));
+document.write("<br>"+aluno.join("☺"));
+document.write("<br>"+aluno.join("♠"));
+
+//concat - para inserir elementos em um array já existente
+
+var aluno=["Fulano", "Siclano", "Bertano"];
+document.write("<br>"+aluno.concat("Fulano", "Siclano"));
