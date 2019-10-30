@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Aula 7 - Dom - Eventos do mouse</title>
+<script src="aula7.js"></script>
+</head>
+<body>
+<!--onclick evento de clicar do mouse-->
+<h1 onclick="changeText(this)">Clique no texto!</h1>
+<button onclick="displayDate()">Data</button><!-- se criar o id dentro
+do button a resposta irá aparecer dentro do próprio botão-->
+<p id="demo"></p><!--para mostrar o resultado fora do botão-->
+<!--onmouseover para passar o mouse e onmouseout para tirar(sair)-->
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style="background-color:#F4B7C6;width:120px;height:20px;
+padding:40px;">Passe Aqui!!!</div><br>
+<!--onmousedown para clicar e segurar onmouseup para soltar o clique-->
+<div onmousedown="mDown(this)" onmouseup="mUp(this)" 
+style="background-color:#A5B6C4;width:120px;height:20px;
+padding:40px;">Clica e segura!!!</div><br>
+
+<style>
+.botão{
+width:25px;
+height:25px;
+background-color:#76A;
+color:#FFF
+}
+
+.visor{
+font-size:1em;
+color:#F00;
+}
+</style>
+
+<h2>Calculadora</h2>
+<input type="text" id="visor" size=10 class="visor" /><br><br>
+<input type="submit" class="botão" value="1" onclick="preencher(1);" />
+<input type="submit" class="botão" value="2" onclick="preencher(2);" />
+<input type="submit" class="botão" value="3" onclick="preencher(3);" />
+<input type="submit" class="botão" value="/" onclick="preencher('/');" /><br><br>
+<input type="submit" class="botão" value="4" onclick="preencher(4);" />
+<input type="submit" class="botão" value="5" onclick="preencher(5);" />
+<input type="submit" class="botão" value="6" onclick="preencher(6);" />
+<input type="submit" class="botão" value="*" onclick="preencher('*');" /><br><br>
+<input type="submit" class="botão" value="7" onclick="preencher(7);" />
+<input type="submit" class="botão" value="8" onclick="preencher(8);" />
+<input type="submit" class="botão" value="9" onclick="preencher(9);" />
+<input type="submit" class="botão" value="+" onclick="preencher('+');" /><br><br>
+<input type="submit" class="botão" value="0" onclick="preencher(0);" />
+<input type="submit" class="botão" value="C" onclick="limpar();" />
+<input type="submit" class="botão" value="=" onclick="calcular('=');" />
+<input type="submit" class="botão" value="-" onclick="preencher('-');" /><br><br>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+function changeText(id){
+	id.innerHTML="Olá!Boa Noite!Hoje tem jogo do Flamengo!";
+}
+
+function displayDate(){
+	document.getElementById("demo").innerHTML=Date();
+}
+
+function mOver(obj){
+	obj.innerHTML="Boa Noite!♥";
+}
+
+function mOut(obj){
+	obj.innerHTML="Passe Aqui!";
+}
+
+function mDown(obj){
+	obj.style.backgroundColor="#00CCFF";
+	obj.innerHTML="Thais não gostou da brincadeira♥!!!";
+}
+
+function mUp(obj){
+	obj.style.backgroundColor="#CC44AA";
+	obj.innerHTML="Boa semana!♥!!!";
+}
+
+function limpar(){
+	document.getElementById('visor').value='';
+}
+
+function preencher(valor){
+	document.getElementById('visor').value+=valor;
+}
+
+function calcular(){
+	var resultado=0;
+	resultado=document.getElementById('visor').value;
+	document.getElementById('visor').value='';
+	document.getElementById('visor').value=eval(resultado);
+}
